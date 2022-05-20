@@ -55,7 +55,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/api/travels/1/clients/5
+POST http://localhost:3000/api/travels/2/clients/5
 
 ###
 

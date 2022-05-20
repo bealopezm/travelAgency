@@ -29,6 +29,10 @@ const createTravelClient = (cliente_id, viaje_id) => {
   return executeQuery('insert into clientes_viajes (cliente_id, viaje_id) values (?, ?)', [cliente_id, viaje_id]);
 }
 
+const getAllTravelClient = () => {
+  return executeQuery('select * from clientes_viajes');
+}
+
 module.exports = {
-  getAll, create, update, getById, deleteById, createTravelClient
+  getAll, create, update, getById, deleteById, createTravelClient, getAllTravelClient
 }

@@ -35,7 +35,8 @@ router.delete('/:travelId', async (req, res) => {
 router.post('/:travelId/clients/:clientId', async (req, res) => {
   try {
     const result = await Travel.createTravelClient(req.params.clientId, req.params.travelId)
-    res.json(result);
+    const list = await Travel.getAllTravelClient();
+    res.json(list);
   } catch (err) { res.json({ error: err.message }) }
 });
 
