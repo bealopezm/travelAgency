@@ -1,4 +1,6 @@
-GET http://localhost:3000/api/client
+########## Clients ##########
+
+GET http://localhost:3000/api/clients
 
 ###
 POST http://localhost:3000/api/clients
@@ -34,6 +36,8 @@ DELETE http://localhost:3000/api/clients/3
 
 ###
 
+########## Travels ##########
+
 GET http://localhost:3000/api/travels
 
 ###
@@ -65,3 +69,40 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/api/travels/3
+
+########## Hotels ##########
+
+###
+GET http://localhost:3000/api/hotels
+
+###
+
+POST http://localhost:3000/api/hotels
+Content-Type: application/json
+
+{
+  "nombre": "Hotel Chungo", 
+  "direccion": "C/ Moho nº 20", 
+  "ciudad": "Galicia", 
+  "num_estrellas": 1, 
+  "descripcion": "Mira si hay cucarachas", 
+  "tarifa": 5  
+}
+
+###
+
+PUT http://localhost:3000/api/hotels/2
+Content-Type: application/json
+
+{
+  "nombre": "Hotel Chungo", 
+  "direccion": "C/ Moho nº 20", 
+  "ciudad": "Barcelona", 
+  "num_estrellas": 1, 
+  "descripcion": "Mira si hay cucarachas", 
+  "tarifa": 5 
+}
+
+###
+
+DELETE http://localhost:3000/api/hotels/3
