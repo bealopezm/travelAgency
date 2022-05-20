@@ -1,0 +1,32 @@
+GET http://localhost:3000/api/clients
+
+###
+POST http://localhost:3000/api/clients
+Content-Type: application/json
+
+{
+  "nombre": "Amapola",
+  "apellidos": "Rodríguez",
+  "direccion": "C/Amapola 5, Jaen",
+  "telefono": "52581125", 
+  "fecha_nacimiento": "1999-11-03", 
+  "dni": "14785240H", 
+  "email": "amapola@gmail.com"
+}
+
+###
+PUT http://localhost:3000/api/clients/4
+Content-Type: application/json
+
+{
+  "nombre": "Rosa",
+  "apellidos": "Romero",
+  "direccion": "C/Nispero 17, Huelva",
+  "telefono": "787778512", 
+  "fecha_nacimiento": "1994-08-28", 
+  "dni": "15555777H", 
+  "email": "rosa@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/api/clients/3
