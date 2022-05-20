@@ -55,7 +55,11 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/api/travels/1
+POST http://localhost:3000/api/travels/1/clients/5
+
+###
+
+PUT http://localhost:3000/api/travels/2
 Content-Type: application/json
 
 {
@@ -63,7 +67,7 @@ Content-Type: application/json
   "fecha_vuelta": "2022-05-30 22:00", 
   "id_vuelo_ida": "55WR8", 
   "id_vuelo_vuelta": "4456U", 
-  "hotel_id": 3  
+  "hotel_id": 4  
 }
 
 ###
@@ -81,12 +85,12 @@ POST http://localhost:3000/api/hotels
 Content-Type: application/json
 
 {
-  "nombre": "Hotel Chungo", 
-  "direccion": "C/ Moho nº 20", 
-  "ciudad": "Galicia", 
-  "num_estrellas": 1, 
-  "descripcion": "Mira si hay cucarachas", 
-  "tarifa": 5  
+  "nombre": "Hotel la Libertad", 
+  "direccion": "C/ Esperanza nº 2", 
+  "ciudad": "Huelva", 
+  "num_estrellas": 3, 
+  "descripcion": "Hotel nudista", 
+  "tarifa": 150  
 }
 
 ###
@@ -106,3 +110,4 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/api/hotels/3
+

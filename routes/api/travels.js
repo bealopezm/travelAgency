@@ -32,5 +32,11 @@ router.delete('/:travelId', async (req, res) => {
   } catch (err) { res.json({ error: err.message }) }
 });
 
+router.post('/:travelId/clients/:clientId', async (req, res) => {
+  try {
+    const result = await Travel.createTravelClient(req.params.clientId, req.params.travelId)
+    res.json(result);
+  } catch (err) { res.json({ error: err.message }) }
+});
 
 module.exports = router;
